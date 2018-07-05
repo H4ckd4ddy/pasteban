@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([0-9a-z]+)$ index.php?ref=$1 [L]
