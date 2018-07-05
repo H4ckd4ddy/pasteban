@@ -95,6 +95,34 @@ if(isset($_POST["document"])){
 			#publish_button {
 				margin-top: 50px;
 			}
+			.ribbon {
+				/* positioning */
+				position: fixed;
+				padding: 5px 45px;
+				width: 128px;
+				/* bottom right of the page */
+				bottom: 50px;
+				right: -50px;
+				-webkit-transform: rotate(315deg);
+				-moz-transform: rotate(315deg);
+				-ms-transform: rotate(315deg);
+				transform: rotate(315deg);
+				/* effects with some shadow */
+				box-shadow: 0 0 0 3px #2c2c29, 0 0 20px -3px rgba(0, 0, 0, 0.5);
+				text-shadow: 0 0 0 #ffffff, 0 0 5px rgba(0, 0, 0, 0.3);
+				/* looks */
+				background-color: #2c2c29;
+				color: #ffffff;
+				font-size: 13px;
+				font-family: sans-serif;
+				text-decoration: none;
+				font-weight: bold;
+				/* ribbon effects */
+				border: 2px dotted #ffffff;
+				/* webkit antialias fix */
+				-webkit-backface-visibility: hidden;
+				letter-spacing: .5px;
+			}
 		</style>
 	</head>
 	<body>
@@ -130,5 +158,6 @@ if(isset($_POST["document"])){
 			<?php
 		}
 		?>
+		<a href='https://github.com/sellan/pasteban' style='position:fixed;padding:5px 45px;width:128px;bottom:50px;right:-50px;-webkit-transform:rotate(315deg);-moz-transform:rotate(315deg);-ms-transform:rotate(315deg);transform:rotate(315deg);box-shadow:0 0 0 3px #2c2c29, 0 0 20px -3px rgba(0, 0, 0, 0.5);text-shadow:0 0 0 #ffffff, 0 0 5px rgba(0, 0, 0, 0.3);background-color:#2c2c29;color:#ffffff;font-size:13px;font-family:sans-serif;text-decoration:none;font-weight:bold;border:2px dotted #ffffff;-webkit-backface-visibility:hidden;letter-spacing:.5px;'>Fork me on GitHub</a>
 	</body>
 </html>
